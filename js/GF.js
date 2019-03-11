@@ -1,6 +1,6 @@
-var version         = 201902071200;         // Version == 최종수정일 시간 분
-var updateString    = "2019-02-07 Changelog"
-                    + "\n- Bug fixed (sum of contract value)"
+var version         = 201903111700;         // Version == 최종수정일 시간 분
+var updateString    = "2019-03-11 Changelog"
+                    + "\n- Bug fixed (Amount of auto recovery)"
                     ;
 
 var selLang         = 'ko';   //기본 언어는 한국어
@@ -1114,7 +1114,7 @@ function drawStage(){
         sumT += objectList[selectedList[i]].Area + '-' + objectList[selectedList[i]].Stage + ', ';
 
         //3분에 인탄식 3회복 & 3분에 부품 1회복
-        if(sw_recovery){
+        if((sw_recovery) && (i == 0)){ //한번만 실행되야지?
             for(var j = 0; j < parseInt(maxTimeRange / 60) + 1; j++){
                 var tmp = new Array();
                 tmp[0] = j * 60 * 60 * 1000;
