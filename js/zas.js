@@ -60,13 +60,13 @@ function btn_hideModal(idx){
 }
 
 function btn_openHelp(){
-    for(var i = 1; i < 8; i++){
+    for(var i = 1; i < 9; i++){
         $('#btn-help-' + i).removeClass("hide");
     }
 }
 
 function btn_toggleHelp(me){
-    for(var i = 1; i < 8; i++){
+    for(var i = 1; i < 9; i++){
         $('#btn-help-' + i + 'a').addClass("hide");
     }
     $('#btn-help-' + me + 'a').removeClass("hide");
