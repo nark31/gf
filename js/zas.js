@@ -59,6 +59,7 @@ function btn_hideModal(idx){
     $('#help'+idx).modal("hide");
 }
 
+
 function btn_openHelp(){
     for(var i = 1; i < 9; i++){
         $('#btn-help-' + i).removeClass("hide");
